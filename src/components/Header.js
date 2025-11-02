@@ -5,20 +5,26 @@ import searchIcon from "../assets/icons/img_search_normal.svg";
 import heartIcon from "../assets/icons/img_heart.svg";
 import bagIcon from "../assets/icons/img_shopping_bag.svg";
 import profileIcon from "../assets/icons/img_profile.svg";
+import { ReactComponent as InfoIcon } from '../assets/icons/img_element_4.svg';
+
 
 const Header = () => {
   return (
     <header className="header">
       {/* Top Bar */}
+
       <div className="header-top">
         <div className="top-item">
-          <span className="top-icon">⬛</span> Lorem ipsum dolor
+          <InfoIcon className="top-icon" />
+          <span>Lorem ipsum dolor</span>
         </div>
         <div className="top-item">
-          <span className="top-icon">⬛</span> Lorem ipsum dolor
+          <InfoIcon className="top-icon" />
+          <span>Lorem ipsum dolor</span>
         </div>
         <div className="top-item">
-          <span className="top-icon">⬛</span> Lorem ipsum dolor
+          <InfoIcon className="top-icon" />
+          <span>Lorem ipsum dolor</span>
         </div>
       </div>
 
