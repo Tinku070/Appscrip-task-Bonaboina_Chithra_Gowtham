@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Appscrip-task-Bonaboina_Chithra_Gowtham
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Product Listing Page (PLP) - Next.js Implementation
 
-## Available Scripts
+This repository contains a fully functional, responsive, and SEO-optimized Product Listing Page (PLP) built as an assignment for Appscrip. The project is implemented using **Next.js** to demonstrate proficiency in **Server-Side Rendering (SSR)**, clean code architecture, and modern front-end best practices.
 
-In the project directory, you can run:
+### 🔗 Live Demo & Repository
 
-### `npm start`
+| Type | Link | Note |
+| :--- | :--- | :--- |
+| **Live Demo URL** | `[Your Netlify/Vercel URL Here]` | Hosted on Netlify/Vercel. |
+| **GitHub Repo** | `[Repository Link Here]` | The source code you are viewing. |
+| **Figma Design** | [Design Task - PLP](https://www.figma.com/file/N0Tv7yYLf3kfMLQjUncUlx/Design-Task---PLP?type=design&node-id=0-1&mode=design&t=mEpvVYQ7GInQPxXk-0) | Reference for the UI design. |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ✨ Features Implemented
 
-### `npm test`
+* **Server-Side Rendering (SSR):** Product data is fetched on the server using Next.js's `getServerSideProps` for improved initial load performance and SEO.
+* **Responsive Design:** Seamless layout adaptation across Desktop, Tablet (768px), and Mobile (375px) breakpoints, as specified in the Figma design.
+* **External API Integration:** Uses the **Fake Store API** (`https://fakestoreapi.com/`) for dynamic product data.
+* **Comprehensive SEO:** Implements semantic HTML, meta tags, and Schema.org structured data.
+* **Pure CSS Styling:** Styles are applied using native CSS (or CSS Modules), avoiding heavy external UI frameworks to ensure a minimal DOM size and fast load times.
+* **Filtering and Search:** Functional filtering logic (e.g., by category or price) can be implemented client-side after initial data load.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### 🛠️ Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Category | Technology |
+| :--- | :--- |
+| **Framework** | Next.js (React) |
+| **Language** | JavaScript (ES6+), HTML, CSS |
+| **Styling** | Pure CSS / CSS Modules (No Bootstrap/Tailwind) |
+| **Data Fetching**| Native `fetch` (or optional `axios`) |
+| **Version Control**| Git / GitHub |
+| **Hosting** | Netlify / Vercel |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🚀 Local Setup and Development
 
-### `npm run eject`
+To run this project locally, you need Node.js (v14+) and npm installed.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Node.js (v14 or higher)
+* npm or yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Installation Steps
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/yourusername/Appscrip-task-yourname.git](https://github.com/yourusername/Appscrip-task-yourname.git)
+    cd Appscrip-task-yourname
+    ```
 
-## Learn More
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4.  Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 📦 Project Structure
