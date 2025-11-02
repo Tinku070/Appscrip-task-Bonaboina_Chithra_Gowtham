@@ -32,7 +32,7 @@ const Footer = () => {
           <p>+44 221 133 5360 • customercare@mettamuse.com</p>
           <h3>CURRENCY</h3>
           <p>
-            <img src={flag} alt="Flag" /> USD
+            <img src={flag} alt="Flag" />  Rupee
           </p>
         </div>
       </div>
