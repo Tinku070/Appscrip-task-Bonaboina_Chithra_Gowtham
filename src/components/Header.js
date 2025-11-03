@@ -1,38 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
+
 import logo from "../assets/icons/img_header_logo.svg";
 import searchIcon from "../assets/icons/img_search_normal.svg";
 import heartIcon from "../assets/icons/img_heart.svg";
 import bagIcon from "../assets/icons/img_shopping_bag.svg";
-import profileIcon from "../assets/icons/img_profile.svg";
-import { ReactComponent as InfoIcon } from '../assets/icons/img_element_4.svg';
-
+import userIcon from "../assets/icons/img_profile.svg";
+import menuIcon from "../assets/icons/img_element_4.svg";
+import svgElement from "../assets/icons/img_element_4.svg";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className="header">
-      {/* Top Bar */}
-
+      {/* Top Black Bar */}
       <div className="header-top">
         <div className="top-item">
-          <InfoIcon className="top-icon" />
+          <img src={svgElement} alt="icon" className="top-icon" />
           <span>Lorem ipsum dolor</span>
         </div>
         <div className="top-item">
-          <InfoIcon className="top-icon" />
+          <img src={svgElement} alt="icon" className="top-icon" />
           <span>Lorem ipsum dolor</span>
         </div>
         <div className="top-item">
-          <InfoIcon className="top-icon" />
+          <img src={svgElement} alt="icon" className="top-icon" />
           <span>Lorem ipsum dolor</span>
         </div>
       </div>
 
-      {/* Main Navigation */}
+      {/* Middle Section */}
       <div className="header-main">
-        <img src={logo} alt="metta muse logo" className="header-logo" />
+        <div className="logo-section">
+          <img src={menuIcon} alt="menu" className="menu-icon" onClick={() => setIsMenuOpen(!isMenuOpen)} />
+          <img src={logo} alt="Logo" className="logo" />
+        </div>
 
-        <nav className="nav">
+        <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
           <a href="#">SHOP</a>
           <a href="#">SKILLS</a>
           <a href="#">STORIES</a>
@@ -44,8 +49,8 @@ const Header = () => {
           <img src={searchIcon} alt="Search" />
           <img src={heartIcon} alt="Wishlist" />
           <img src={bagIcon} alt="Cart" />
-          <img src={profileIcon} alt="Profile" />
-          <span className="lang">ENG ⌄</span>
+          <img src={userIcon} alt="User" />
+          <span className="lang">ENG <span className="arrow">▼</span></span>
         </div>
       </div>
     </header>
